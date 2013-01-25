@@ -155,6 +155,13 @@ Defaults to _path_.
 
 This property is tracked as part of the canvas state in save/restore.
 
+### Font handling
+
+Fonts are loaded in the borwser using CSS. As node doesn't have a DOM, this function is
+implemented as:
+
+[TODO]
+
 ### Global Composite Operations
 
 In addition to those specified and commonly implemented by browsers, the following have been added:
@@ -193,7 +200,7 @@ ctx.antialias = 'none';
 var canvas = new Canvas(200, 500, 'pdf');
 ```
 
- An additional method `.addPage()` is then available to create 
+ An additional method `.addPage()` is then available to create
  multiple page PDFs:
 
 ```js
@@ -258,7 +265,7 @@ project  : node-canvas
  active   : 120 days
  commits  : 963
  files    : 72
- authors  : 
+ authors  :
    816	Tj Holowaychuk          84.7%
     58	TJ Holowaychuk          6.0%
     23	c-spencer               2.4%
